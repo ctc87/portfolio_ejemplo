@@ -116,10 +116,6 @@
     background-color : rgba(0, 0, 0, 0.7);
 }
 
-.image:active a{
-    display: table-cell;
-    background-color : rgba(207, 29, 29, 0.7);
-}
 
   /*  Imagenes de fondo */
 .bg-hand {background-image: url(../images/hand.jpg);}
@@ -178,7 +174,7 @@
     }
 
     .info {
-       font-size:0.5em;
+       font-size:0.7em;
        height: 30%;
     }
 }
