@@ -171,10 +171,14 @@
         padding-right: 20px;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 733px) {
 
     #main {
         margin-top:  50%;
+    }
+
+    .info {
+       font-size:50%;
     }
 }
 
