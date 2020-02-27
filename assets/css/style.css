@@ -15,11 +15,56 @@
      background-color: white;
  }
 
+ .logo {
+   display: inline;
+ }
+
+ 
+
   .logo > img {
     width: 16%;
     margin-left: 50px;
     min-width: 300px;
+    animation-duration: 3s;
+    animation-name: logo_move;
  }
+
+ nav {
+   float:right;
+ }
+
+  nav ul {
+
+      text-decoration: none;
+      display: flex;
+      list-style:none;
+      font-size: 2em;
+
+  }
+
+  nav ul li {
+    margin: 0 20px;
+  }
+
+  nav ul li a {
+    color:white;
+    text-decoration: none;
+    
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
+  }
+
+  nav ul li a:hover {
+    color:red;
+    text-decoration: none;
+    
+  }
+  
+
+
+
  
 
  body {
@@ -151,6 +196,18 @@
         max-width: 900px;
         left: 25%;
     }
+    @keyframes logo_move {
+      from {
+        margin-left: 100%;
+        width: 300%
+      }
+    
+      to {
+        margin-left: 50px;
+        width: 16%;
+        min-width: 300px;
+      }
+    }
 }
 @media (max-width: 1858px) {
     .info {
@@ -166,6 +223,20 @@
     .info > p{
         padding-right: 20px;
     }
+    @keyframes logo_move {
+      from {
+        margin-left: 100%;
+        width: 300%
+      }
+    
+      to {
+        margin-left: 50px;
+        width: 16%;
+        min-width: 300px;
+      }
+    }
+
+    
 }
 @media (max-width: 733px) {
 
@@ -177,6 +248,78 @@
        font-size:0.7em;
        height: 30%;
     }
+    @keyframes logo_move {
+      from {
+        margin-top: 100%;
+        width: 100%
+      }
+    
+      to {
+        margin-top: 0%;
+        width: 16%;
+        min-width: 300px;
+      }
+    }
+
+    .form-body {
+      min-width: 250px;
+      margin: auto 20px;
+      
+    }
 }
 
     
+.photo-container:nth-child(2n) .box {
+  border: solid 3px red;
+}
+
+
+
+/*contact us*/
+
+footer a {
+  text-decoration: none;
+  color:white;
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(234,219,203, 0.75);
+  max-width: 800px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.form-subtitle {
+  color:grey;
+}
+
+.form-body div {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-body div:last-child{
+  margin-bottom: 10px;
+}
+.comemnt textarea{
+  width: 300px;
+  height: 150px;
+}
+
+.btn {
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
